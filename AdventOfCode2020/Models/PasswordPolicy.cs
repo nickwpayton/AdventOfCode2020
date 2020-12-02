@@ -12,7 +12,7 @@ namespace AdventOfCode2020.Models
 
         public int MaximumOccurrences { get; set; }
 
-        public string OccurringLetter { get; set; }
+        public char OccurringLetter { get; set; }
 
         public string Password { get; set; }
     }

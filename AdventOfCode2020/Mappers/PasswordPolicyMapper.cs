@@ -30,7 +30,7 @@ namespace AdventOfCode2020.Mappers
             mappedPolicy.MinimumOccurrences = int.Parse(occurrences[0]);
             mappedPolicy.MaximumOccurrences = int.Parse(occurrences[1]);
 
-            mappedPolicy.OccurringLetter = policy[1].Remove(1);
+            mappedPolicy.OccurringLetter = policy[1].ToCharArray()[0];
 
             mappedPolicy.Password = policy[2];
 
