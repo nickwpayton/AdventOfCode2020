@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileReader.cs" />
     <Compile Include="ExpenseReport.cs" />
     <Compile Include="IntegrationTests.cs" />
     <Compile Include="LinqHelper.cs" />

@@ -26,7 +26,7 @@ namespace AdventOfCode2020
         {
             foreach (var entry in entries)
             {
-                var remainingEntries = entries.RemoveFirst();
+                var remainingEntries = entries.GetRange(1, entries.Count - 1);
 
                 foreach (var remainingEntry in remainingEntries)
                 {
