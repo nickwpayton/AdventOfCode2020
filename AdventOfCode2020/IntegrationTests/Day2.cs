@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using AdventOfCode2020.Mappers;
+using NUnit.Framework;
 
 namespace AdventOfCode2020.IntegrationTests.Day1
 {
@@ -11,7 +12,10 @@ namespace AdventOfCode2020.IntegrationTests.Day1
             var fileReader = new FileReader();
             var expenseReport = new ExpenseReport();
             var fileExtension = @"C:\Users\ucpayto\source\repos\AdventOfCode2020\day-2-input.txt";
-            var passwordsWithPolicies = fileReader.GetStringListsFromFile(fileExtension);
+            var stringPolicies = fileReader.GetStringListsFromFile(fileExtension);
+
+            var passwordPolicies = PasswordPolicyMapper.Map(stringPolicies);
+
             var twentyTwenty = 2020;
         }
     }

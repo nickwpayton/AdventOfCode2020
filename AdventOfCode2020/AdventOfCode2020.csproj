@@ -53,6 +53,9 @@
     <Compile Include="IntegrationTests\Day2.cs" />
     <Compile Include="IntegrationTests\Day1.cs" />
     <Compile Include="LinqHelper.cs" />
+    <Compile Include="Mappers\PasswordPolicyMapper.cs" />
+    <Compile Include="Models\PasswordPolicy.cs" />
+    <Compile Include="PasswordPolicyValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
