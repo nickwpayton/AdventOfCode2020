@@ -8,9 +8,9 @@ namespace AdventOfCode2020.Models
 {
     public class PasswordPolicy
     {
-        public int MinimumOccurrences { get; set; }
+        public int FirstCharLocation { get; set; }
 
-        public int MaximumOccurrences { get; set; }
+        public int SecondCharLocation { get; set; }
 
         public char OccurringLetter { get; set; }
 

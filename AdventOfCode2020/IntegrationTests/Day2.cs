@@ -7,7 +7,7 @@ namespace AdventOfCode2020.IntegrationTests.Day1
     class Day2
     {
         [Test]
-        public void Part1_GetValidPolicies()
+        public void Part2_GetValidPolicies()
         {
             var fileReader = new FileReader();
             var fileExtension = @"C:\Users\ucpayto\source\repos\AdventOfCode2020\day-2-input.txt";

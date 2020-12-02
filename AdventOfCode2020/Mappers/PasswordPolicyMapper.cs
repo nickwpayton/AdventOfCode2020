@@ -26,9 +26,9 @@ namespace AdventOfCode2020.Mappers
         {
             var mappedPolicy = new PasswordPolicy();
 
-            var occurrences = policy[0].Split('-');
-            mappedPolicy.MinimumOccurrences = int.Parse(occurrences[0]);
-            mappedPolicy.MaximumOccurrences = int.Parse(occurrences[1]);
+            var charLocations = policy[0].Split('-');
+            mappedPolicy.FirstCharLocation = int.Parse(charLocations[0]) - 1;
+            mappedPolicy.SecondCharLocation = int.Parse(charLocations[1]) - 1;
 
             mappedPolicy.OccurringLetter = policy[1].ToCharArray()[0];
 

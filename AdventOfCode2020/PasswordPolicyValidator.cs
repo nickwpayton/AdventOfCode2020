@@ -1,6 +1,5 @@
 ﻿using AdventOfCode2020.Models;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace AdventOfCode2020
 {
@@ -12,10 +11,8 @@ namespace AdventOfCode2020
 
             foreach(var passwordPolicy in passwordPolicies)
             {
-                var occurringLetterCount = passwordPolicy.Password.Count(character => character == passwordPolicy.OccurringLetter);
-
-                if (passwordPolicy.MinimumOccurrences <= occurringLetterCount &&
-                    occurringLetterCount <= passwordPolicy.MaximumOccurrences)
+                if (passwordPolicy.Password[passwordPolicy.FirstCharLocation] == passwordPolicy.OccurringLetter ^
+                    passwordPolicy.Password[passwordPolicy.SecondCharLocation] == passwordPolicy.OccurringLetter)
                 {
                     validPolicies.Add(passwordPolicy);
                 }
