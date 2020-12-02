@@ -17,5 +17,20 @@ namespace AdventOfCode2020
             var intList = new List<int>(ints);
             return intList;
         }
+
+        public List<List<string>> GetStringListsFromFile(string fileExtension)
+        {
+            string[] lines = System.IO.File.ReadAllLines(fileExtension);
+
+            var stringLists = new List<List<string>>();
+
+            foreach(var line in lines)
+            {
+                var stringList = line.Split(' ').ToList();
+                stringLists.Add(stringList);
+            }
+
+            return stringLists;
+        }
     }
 }

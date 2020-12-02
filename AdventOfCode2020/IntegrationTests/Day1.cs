@@ -1,14 +1,9 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace AdventOfCode2020
+namespace AdventOfCode2020.IntegrationTests.Day1
 {
     [TestFixture]
-    class IntegrationTests
+    class Day1
     {
         [Test]
         public void FindTwoEntriesSummingToTotal_andMultiplyThem()
