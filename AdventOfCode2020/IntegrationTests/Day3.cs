@@ -17,7 +17,6 @@ namespace AdventOfCode2020.IntegrationTests.Day1
             var fileReader = new FileReader();
             var treeGrid = fileReader.GetLinesFromFile(fileExtension).ToList();
 
-            //char[][] forest = treeGrid.Select(tile => tile.ToArray()).ToArray();
             var down = 2;
             var right = 1;
 
@@ -42,22 +41,11 @@ namespace AdventOfCode2020.IntegrationTests.Day1
             var forestRowLength = forest[i].Length;
             while (i < forest.Length)
             {
-                //if (j + right > forestRowLength - 1)
-                //{
-                //    j = j + right - forestRowLength;
-                //    TallyTreeEncounter(forest[i][j]);
-                //}
-                //else
-                //{
-                //    j += right;
-                //    TallyTreeEncounter(forest[i][j]);
-                //}
                 j += right;
                 TallyTreeEncounter(forest[i][j]);
                 i += down;
             }
             var encounters = _treeEncounters;
-            var twentyTwenty = 2020;
         }
 
         private void TallyTreeEncounter(char tile)
