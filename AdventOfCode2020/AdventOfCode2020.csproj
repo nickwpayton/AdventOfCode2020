@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="FileReader.cs" />
     <Compile Include="ExpenseReport.cs" />
+    <Compile Include="IntegrationTests\Day3.cs" />
     <Compile Include="IntegrationTests\Day2.cs" />
     <Compile Include="IntegrationTests\Day1.cs" />
     <Compile Include="LinqHelper.cs" />

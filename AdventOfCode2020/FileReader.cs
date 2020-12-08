@@ -32,5 +32,12 @@ namespace AdventOfCode2020
 
             return stringLists;
         }
+
+        public string[] GetLinesFromFile(string fileExtension)
+        {
+            string[] lines = System.IO.File.ReadAllLines(fileExtension);
+
+            return lines;
+        }
     }
 }
